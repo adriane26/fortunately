@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Fortunately</title>
+</head>
+
+<body>
+	<form action="/cookie" method="GET" role="form">
+  	<h3>Reveal your fortune!</h3>
+  	<button type="submit" class="btn btn-primary" onclick="reveal()">Open the cookie of fortune!</button>
+	</form>
+	<img id="cookie" src="cookie.jpg">
+	<div id="fortuneDiv">
+		<h1 id="fortune"></h1>
+	</div>
+	<!-- after the cookie is clicked and the fortune is revealed, show "revealed"--> 
+	<div class="cookieHasSpoken">
+		<h1 id="revealed"> the cookie has spoken! </h1>
+	</div>
+
+</body>
+</html>
