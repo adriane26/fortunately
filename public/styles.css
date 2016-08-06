@@ -3,6 +3,10 @@ h1 {
 	background-color: pink;
 }
 
-#revealed {
+#fortuneDiv, #revealed {
 	display: none;
+}
+
+h3 {
+	color: blue;
 }

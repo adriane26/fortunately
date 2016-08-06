@@ -10,22 +10,24 @@ router.get('/', function(req, res){
 			res.render('home', {data: data});
 			console.log(response.statusCode);
 			console.log(data);
+			// reveal();
 		} else {
 			res.render('error');
 		}
 	});
 });
 
-function reveal(){
-	// event.preventDefault;
-	console.log("reveal() cookie.js");
-	//once submit button is clicked: the image changes, 
-	document.getElementById('cookie').src = 'cookieOpen.jpg';
-	//the fortune appears, 
-	document.getElementById('fortune').innerHTML = 'hi';
-	//and the "revealed" div appears
-	document.getElementById('revealed').style.display = 'block';
-};  
+// var reveal = function(){
+// 	// event.preventDefault;
+// 	console.log("reveal() cookie.js");
+// 	//once submit button is clicked: the image changes, 
+// 	// document.getElementById('cookie').src = 'cookieOpen.jpg';
+// 	//the fortune appears, 
+// 	document.getElementById('fortune').innerHTML = 'hi';
+// 	//and the "revealed" div appears
+// 	document.getElementById('fortuneDiv').style.display = 'block';
+// 	document.getElementById('revealed').style.display = 'inline';
+// };
 
 module.exports = router;
 

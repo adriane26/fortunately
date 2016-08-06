@@ -28,21 +28,22 @@ app.use('/cookie', require('./controllers/cookie'));
 
 // error handling
 app.get('/404', function(req, res, next){
-  // res.render('error');
+  res.render('error');
   next();
 });
 
 // SCRIPTS (SHOULD PUT THIS IN A DIFFERENT FOLDER?)
-function reveal(){
+var reveal = function(){
 	// event.preventDefault;
-	console.log("reveal() index.js");
+	console.log("reveal() cookie.js");
 	//once submit button is clicked: the image changes, 
-	document.getElementById('cookie').src = 'cookieOpen.jpg';
+	// document.getElementById('cookie').src = 'cookieOpen.jpg';
 	//the fortune appears, 
 	document.getElementById('fortune').innerHTML = 'hi';
 	//and the "revealed" div appears
-	document.getElementById('revealed').style.display = 'block';
-};
+	document.getElementById('fortuneDiv').style.display = 'block';
+	document.getElementById('revealed').style.display = 'inline';
+}; 
 
-
-app.listen(3000);
+console.log("Chuck Norris never wet the bed as a child, the bed wet itself out of fear.");
+app.listen(process.env.PORT || 3000);
