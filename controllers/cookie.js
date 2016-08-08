@@ -10,7 +10,7 @@ router.get('/', function(req, res){
 			res.render('home', {data: data});
 			console.log(response.statusCode);
 			console.log(data);
-			// reveal();
+			 // reveal();
 		} else {
 			res.render('error');
 		}

@@ -11,18 +11,22 @@
 
 <body>
 	<div class='container-fluid'>
-		<form action="/cookie" method="GET" role="form">
+		<form action="/cookie" method="GET">
 	  	<h3>Reveal your fortune!</h3>
 	  	<button type="submit" class="btn btn-warning">Open the cookie of fortune!</button>
 		</form>
 		<!-- <img id="cookie" src="cookie.jpg"> -->
-		<div id="fortuneDiv">
-			<h1 id="fortune">Your fortune is: </h1>
+		<div>
+			<h1 id="fortune">Your fortune is:
+			</h1>
 		</div>
 		<!-- after the cookie is clicked and the fortune is revealed, show "revealed"--> 
 		<div id="cookieHasSpoken">
 			<h1 id="revealed"> the cookie has spoken! </h1>
 		</div>
+		<footer>
+			<a href="/about">About</a>
+		</footer>
 	</div>
 
 </body>

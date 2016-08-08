@@ -40,10 +40,28 @@ var reveal = function(){
 	// document.getElementById('cookie').src = 'cookieOpen.jpg';
 	//the fortune appears, 
 	document.getElementById('fortune').innerHTML = 'hi';
+	document.getElementById('fortune').style.display= 'inline';
 	//and the "revealed" div appears
-	document.getElementById('fortuneDiv').style.display = 'block';
+	// document.getElementById('fortuneDiv').style.display = 'block';
 	document.getElementById('revealed').style.display = 'inline';
-}; 
+};
+
+// Error handlers
+app.use(function(req, res, next){
+  res.status(404);
+  // respond with html page
+  if (req.accepts('html')) {
+    res.render('error', { url: req.url });
+    return;
+  }
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: 'Not found' });
+    return;
+  }
+  // default to plain-text. send()
+  res.type('txt').send('Not found');
+});
 
 console.log("Chuck Norris never wet the bed as a child, the bed wet itself out of fear.");
 app.listen(process.env.PORT || 3000);
