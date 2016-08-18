@@ -30,6 +30,3 @@ router.get('/', function(req, res){
 // };
 
 module.exports = router;
-
-// https://api.icndb.com CHUCK NORRIS 	http://api.icndb.com/jokes/random
-// FORTUNE COOKIES: http://www.yerkee.com/api/fortune/definitions

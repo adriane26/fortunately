@@ -1,5 +1,5 @@
 var express = require('express');
-// var ejsLayouts = require('express-ejs-layouts');
+var ejsLayouts = require('express-ejs-layouts');
 var request = require('request');
 // var session   = require('express-session');
 // var bcrypt = require('bcrypt');
@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.set('view engine', 'ejs');
-// app.use(ejsLayouts);
+app.use(ejsLayouts);
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
