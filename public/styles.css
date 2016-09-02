@@ -51,6 +51,7 @@ html {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
+  padding-top: 10px;
   text-align: center;
   vertical-align: middle;
 }
