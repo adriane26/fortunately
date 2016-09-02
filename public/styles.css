@@ -1,12 +1,70 @@
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat';
+
+/*https://fonts.google.com/selection?selection.family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat&category=Display
+*/
+
+/*font-family: 'Baloo Paaji', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Coming Soon', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Walter Turncoat', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Nova Mono', monospace;
+font-family: 'Inconsolata', monospace;
+font-family: 'Gravitas One', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Jomhuria', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Megrim', cursive;*/
+
 h1 {
-	color: green;
-	background-color: pink;
+	font-family: 'Covered By Your Grace', cursive;
 }
 
-#fortuneDiv, #fortune, #revealed {
+.h1font {
+	text-align: center;
+}
+
+/*.blocked {
+	display: block;
+}*/
+
+#disclaimer {
+	/*text-align: center;*/
+	/*position: absolute;*/
+	/*bottom: 40px;*/
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*#fortuneDiv, #fortune, #revealed {
 	display: none;
+}*/
+
+#fortuneDiv {
+	outline: solid black 2px;
+	padding: 10px;
 }
 
 h3 {
 	color: blue;
+	font-family: 'Coming Soon', cursive;
 }

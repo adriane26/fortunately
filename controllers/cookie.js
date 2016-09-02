@@ -7,9 +7,10 @@ router.get('/', function(req, res){
 		var data = JSON.parse(body);
 		if (!err && response.statusCode === 200 && data)
 		{
-			res.render('home', {data: data});
-			console.log(response.statusCode);
-			console.log(data);
+			res.render('revealed', {data: data});
+			// console.log(response.statusCode);
+			// console.log(data);
+			console.log(data.value.joke);
 			 // reveal();
 		} else {
 			res.render('error');

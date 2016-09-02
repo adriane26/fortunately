@@ -1,15 +1,13 @@
-	<div class='container-fluid'>
-		<form action="/cookie" method="GET">
-	  	<h3>Reveal your fortune!</h3>
-	  	<button type="submit" class="btn btn-warning">Open the cookie of fortune!</button>
-		</form>
-		<!-- <img id="cookie" src="cookie.jpg"> -->
-		<div>
+<div class='container-fluid'>
+	<form action="/cookie" method="GET">
+	  <h3>Reveal your fortune!</h3>
+	  	<!-- <button href="/revealed" type="submit" class="btn btn-warning">Open the cookie of fortune!</button> -->
+	  <a href="/revealed"><input type="image" alt="fortune cookie" src="cookieClosed.jpg"></a>
+	</form>
+		<!-- <img id="cookie" src="cookieClosed.jpg"> -->
+		<!-- <div>
 			<h1 id="fortune">Your fortune is:
 			</h1>
-		</div>
+		</div> -->
 		<!-- after the cookie is clicked and the fortune is revealed, show "revealed"--> 
-		<div id="cookieHasSpoken">
-			<h1 id="revealed"> the cookie has spoken! </h1>
-		</div>
-	</div>
+</div>
