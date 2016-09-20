@@ -1,33 +1,43 @@
-@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat';
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Josefin+Slab|Megrim|Nova+Mono|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat';
+
 
 /*https://fonts.google.com/selection?selection.family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat&category=Display
 */
 
-/*font-family: 'Baloo Paaji', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Amatic SC', cursive;
-font-family: 'Coming Soon', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Covered By Your Grace', cursive;
-font-family: 'Walter Turncoat', cursive;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Fondamento', cursive;
-font-family: 'Cutive Mono', monospace;
-font-family: 'Nova Mono', monospace;
-font-family: 'Inconsolata', monospace;
-font-family: 'Gravitas One', cursive;
-font-family: 'Special Elite', cursive;
-font-family: 'Jomhuria', cursive;
-font-family: 'Cabin Sketch', cursive;
-font-family: 'Megrim', cursive;*/
+/*font-family: 'Baloo Paaji', cursive; <- kinda cartoony
+font-family: 'Roboto', sans-serif; <-- typical bootstrap
+
+font-family: 'Amatic SC', cursive; <-- pretty good for caps handwriting, could be for fortune
+font-family: 'Permanent Marker', cursive; 
+font-family: 'Covered By Your Grace', cursive;  <-handwriting
+font-family: 'Walter Turncoat', cursive; <-- might be ok for fortune
+font-family: 'Fondamento', cursive; <-- slight "Chinese" fortune cookie feel
+font-family: 'Cutive Mono', monospace;  <-- might be too spacey for typed font
+font-family: 'Inconsolata', monospace; <--good
+font-family: 'Gravitas One', cursive; <--broadway playbill
+font-family: 'Special Elite', cursive; <-- too ransom notey
+
+font-family: 'Megrim', cursive; <-- I like it */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 h1 {
-	font-family: 'Covered By Your Grace', cursive;
+	font-family: 'Megrim';
 }
 
 .h1font {
 	text-align: center;
+}
+
+h3, p, .fortuneFont {
+	font-family: 'Inconsolata';
+}
+
+#cookieSpeaks {
+	padding-bottom: 20px;
 }
 
 /*.blocked {
@@ -35,23 +45,27 @@ h1 {
 }*/
 
 #disclaimer {
-	/*text-align: center;*/
+	text-align: center;
+	font-size: 10px;
+	padding-top: 20px;
 	/*position: absolute;*/
 	/*bottom: 40px;*/
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.disclaimerDiv {
+	/*padding-bottom: -10px;*/
+}
+
+.connect {
+	text-align: center;
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 40px;
-  padding-top: 10px;
+  padding-top: 40px;
   text-align: center;
   vertical-align: middle;
 }
@@ -65,7 +79,13 @@ html {
 	padding: 10px;
 }
 
-h3 {
-	color: blue;
-	font-family: 'Coming Soon', cursive;
+#fortune {
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Inconsolata';
 }
+
+/*h3 {
+	color: gray;
+	font-family: 'Covered By Your Grace', sans-serif;
+}*/
