@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Josefin+Slab|Megrim|Nova+Mono|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat';
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Josefin+Slab|Megrim|Nova+Mono|Permanent+Marker|Roboto|Walter+Turncoat';
 
 
 /*https://fonts.google.com/selection?selection.family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat&category=Display
@@ -15,7 +15,6 @@ font-family: 'Fondamento', cursive; <-- slight "Chinese" fortune cookie feel
 font-family: 'Cutive Mono', monospace;  <-- might be too spacey for typed font
 font-family: 'Inconsolata', monospace; <--good
 font-family: 'Gravitas One', cursive; <--broadway playbill
-font-family: 'Special Elite', cursive; <-- too ransom notey
 
 font-family: 'Megrim', cursive; <-- I like it */
 
@@ -26,6 +25,11 @@ html {
 
 h1 {
 	font-family: 'Megrim';
+	text-align: center;
+}
+
+#clickCookieH1 {
+	animation: pulse 2.3s;
 }
 
 .h1font {
@@ -36,8 +40,9 @@ h3, p, .fortuneFont {
 	font-family: 'Inconsolata';
 }
 
-#cookieSpeaks {
+#cookieSpeaksH1 {
 	padding-bottom: 20px;
+	animation: fadeIn 2.3s;
 }
 
 /*.blocked {
@@ -77,6 +82,8 @@ h3, p, .fortuneFont {
 #fortuneDiv {
 	outline: solid black 2px;
 	padding: 10px;
+	animation: rubberBand 1.5s;
+	/*animation-delay: 3s;*/
 }
 
 #fortune {
