@@ -1,23 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Paaji|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Josefin+Slab|Megrim|Nova+Mono|Permanent+Marker|Roboto|Walter+Turncoat';
 
 
-/*https://fonts.google.com/selection?selection.family=Amatic+SC|Baloo+Paaji|Berkshire+Swash|Cabin+Sketch|Coming+Soon|Covered+By+Your+Grace|Cutive+Mono|Fondamento|Gravitas+One|Inconsolata|Jomhuria|Megrim|Nova+Mono|Pacifico|Permanent+Marker|Roboto|Special+Elite|Walter+Turncoat&category=Display
-*/
-
-/*font-family: 'Baloo Paaji', cursive; <- kinda cartoony
-font-family: 'Roboto', sans-serif; <-- typical bootstrap
-
-font-family: 'Amatic SC', cursive; <-- pretty good for caps handwriting, could be for fortune
-font-family: 'Permanent Marker', cursive; 
-font-family: 'Covered By Your Grace', cursive;  <-handwriting
-font-family: 'Walter Turncoat', cursive; <-- might be ok for fortune
-font-family: 'Fondamento', cursive; <-- slight "Chinese" fortune cookie feel
-font-family: 'Cutive Mono', monospace;  <-- might be too spacey for typed font
-font-family: 'Inconsolata', monospace; <--good
-font-family: 'Gravitas One', cursive; <--broadway playbill
-
-font-family: 'Megrim', cursive; <-- I like it */
-
 html {
   position: relative;
   min-height: 100%;
@@ -25,15 +8,10 @@ html {
 
 h1 {
 	font-family: 'Megrim';
-	text-align: center;
 }
 
 #clickCookieH1 {
 	animation: pulse 2.3s;
-}
-
-.h1font {
-	text-align: center;
 }
 
 h3, p, .fortuneFont {
@@ -45,10 +23,6 @@ h3, p, .fortuneFont {
 	animation: fadeIn 2.3s;
 }
 
-/*.blocked {
-	display: block;
-}*/
-
 #disclaimer {
 	text-align: center;
 	font-size: 10px;
@@ -57,11 +31,7 @@ h3, p, .fortuneFont {
 	/*bottom: 40px;*/
 }
 
-.disclaimerDiv {
-	/*padding-bottom: -10px;*/
-}
-
-.connect {
+.centered {
 	text-align: center;
 }
 
@@ -71,28 +41,25 @@ h3, p, .fortuneFont {
   width: 100%;
   height: 40px;
   padding-top: 40px;
-  text-align: center;
   vertical-align: middle;
 }
 
-/*#fortuneDiv, #fortune, #revealed {
-	display: none;
-}*/
-
 #fortuneDiv {
-	outline: solid black 2px;
+	/* outline: solid black 2px; */
+	border: solid black 2px;
+	vertical-align: middle;
 	padding: 10px;
-	animation: rubberBand 1.5s;
-	/*animation-delay: 3s;*/
+	margin-bottom: 25px;
+	animation: rubberBand 1.2s;
+	animation-delay: .2s;
 }
 
 #fortune {
-	text-align: center;
 	vertical-align: middle;
 	font-family: 'Inconsolata';
 }
 
-/*h3 {
-	color: gray;
-	font-family: 'Covered By Your Grace', sans-serif;
-}*/
+#revealedCookieDiv {
+	margin-bottom: 20px;
+}
+

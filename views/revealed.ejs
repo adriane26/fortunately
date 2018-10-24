@@ -1,7 +1,13 @@
 <div id="cookieHasSpoken" class="container-fluid">
-	<h1 id="cookieSpeaksH1"> The Cookie Has Spoken! </h1>
-	<div id="fortuneDiv">
-		<h1 id="fortune"> <%- data.value.joke %> </h1>
+	<h1 id="cookieSpeaksH1" class="centered">The cookie has spoken!</h1>
+	<div class="col-sm-offset-2 col-sm-8">
+		<div id="fortuneDiv">
+			<h3 id="fortune" class="centered">
+				<%- data.value.joke %>
+			</h3>
+		</div>
 	</div>
-	<img id="cookieOpen" class="img img-responsive" src="cookieBrokenOpen.jpg" alt="opened fortune cookie">
+	<div class="col-sm-6 col-sm-offset-3" id="revealedCookieDiv">
+		<img id="cookieOpen" class="img img-responsive" src="cookieBrokenOpen.jpg" alt="opened fortune cookie">
+	</div>
 </div>
